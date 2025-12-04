@@ -33,7 +33,7 @@ const scenes = {
   help: {
     id: "help",
     title: "A Small Kindness",
-    text: `Kweku chooses kindness: he uses tiny threads to reconstruct the trail of the cloth. The merchant is grateful; a neighbor rewards Kweku with a story about an old trickster. The moral is pleasant — but is it the whole tale?`,
+    text: `Kweku chooses kindness: he uses tiny threads to reconstruct the trail of the cloth. The merchant is grateful; a neighbor rewards Kweku with a story about an old trickster. The moral is pleasant, but is it the whole tale?`,
     choices: [
       { id: "learn", label: "Listen to the neighbor’s story" },
       { id: "moveOn", label: "Move on — curiosity satisfied" },
@@ -42,7 +42,7 @@ const scenes = {
   learn: {
     id: "learn",
     title: "Story Within Story",
-    text: `The neighbor tells a variant: Ananse once lost everything and rebuilt a web of allies. You realize the motif: losing and making is part of the trickster's craft. The tale connects to course motifs — transformation through tale-making.`,
+    text: `The neighbor tells a variant: Ananse once lost everything and rebuilt a web of allies. You realize the motif: losing and making is part of the trickster's craft.`,
     choices: [
       { id: "oldWeb", label: "Ask about the old web" },
       { id: "epilogue", label: "Reflect and close the market day" },
@@ -51,7 +51,7 @@ const scenes = {
   oldWeb: {
     id: "oldWeb",
     title: "The Old Web",
-    text: `In the neighbor's telling, Ananse once built a great web that spanned villages — not to trap, but to connect. Each strand carried a favor and a secret. You learn that Ananse's cunning often remakes community ties, not just individuals.`,
+    text: `In the neighbor's telling, Ananse once built a great web that spanned villages; not to trap, but to connect. Each strand carried a favor and a secret. You learn that Ananse's cunning often remakes community ties, not just individuals.`,
     choices: [{ id: "epilogue", label: "Return to market twilight" }],
   },
   moveOn: {
@@ -63,7 +63,7 @@ const scenes = {
   steal: {
     id: "steal",
     title: "A Quiet Thief",
-    text: `Under the stall, while all eyes are on the healing dance, Kweku slips the cloth into his bag. He grins — until someone recognizes the weave: it's the chief's garb. The stakes rise.`,
+    text: `Under the stall, while all eyes are on the healing dance, Kweku slips the cloth into his bag. He grins until someone recognizes the weave: it's the chief's garb. The stakes rise.`,
     choices: [
       { id: "confess", label: "Confess and face the chief" },
       { id: "hide", label: "Hide the cloth and spin a new tale" },
@@ -72,7 +72,7 @@ const scenes = {
   confess: {
     id: "confess",
     title: "Confrontation",
-    text: `The chief summons Kweku. In the open square, Kweku must choose humility or bravado. He chooses a middle path: he confesses and offers a lesson for the youth — a public performance that rewires the market's expectations.`,
+    text: `The chief summons Kweku. In the open square, Kweku must choose humility or bravado. He chooses a middle path: he confesses and offers a lesson for the youth; a public performance that rewires the market's expectations.`,
     choices: [
       { id: "rebuild", label: "Rebuild trust with a public act" },
       { id: "banished", label: "Refuse and face exile" },
@@ -105,7 +105,7 @@ const scenes = {
   letRage: {
     id: "letRage",
     title: "Let Them Brawl",
-    text: "Rumors spread; the market fractures. Ananse ponders whether cleverness is worth the cost. End of branch.",
+    text: "Rumors spread; the market fractures. Ananse ponders whether cleverness is worth the cost.",
     choices: [],
   },
   rebuild: {
@@ -120,19 +120,19 @@ const scenes = {
   banished: {
     id: "banished",
     title: "Exile",
-    text: `Kweku refuses the chief's terms and is sent away. Alone, he fashions new webs and weighs the cost of being clever but unrepentant. End of branch.`,
+    text: `Kweku refuses the chief's terms and is sent away. Alone, he fashions new webs and weighs the cost of being clever but unrepentant.`,
     choices: [],
   },
   epilogue: {
     id: "epilogue",
     title: "Twilight Threads",
-    text: `At twilight the market closes. You leave with threads of the day: cunning, kindness, rupture, repair. The core motif endures: the trickster shapes community through story and action. Consider how Homer or Ovid reworked motifs — and how you have reshaped Ananse today.`,
+    text: `At twilight the market closes. You leave with threads of the day: cunning, kindness, rupture, repair. The core motif endures: the trickster shapes community through story and action. Consider how Homer or Ovid reworked motifs, and how you have reshaped Ananse today.`,
     choices: [],
   },
   legacy: {
     id: "legacy",
     title: "Legacy",
-    text: `Kweku writes his own tale—one that the next generation will retell differently. The myth continues: motifs preserved, forms altered. End of project.`,
+    text: `Kweku writes his own tale, one that the next generation will retell differently. The myth continues. `,
     choices: [],
   },
 };
@@ -189,7 +189,7 @@ function renderScene(sceneId) {
     });
   } else {
     const done = document.createElement("p");
-    done.textContent = "— End of branch —";
+    done.textContent = "— The story concludes —";
     choicesEl.appendChild(done);
   }
   heroSpider.classList.add("active-spider");
