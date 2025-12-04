@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Kweku Ananse — A Retelling</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="logo">
+        <img
+          src="assets/spider.svg"
+          alt="Ananse spider logo"
+          class="logo-img"
+        />
+        <h1>Kweku Ananse: Threads of a New Tale</h1>
+      </div>
+      <nav>
+        <button id="startBtn" class="nav-btn">Start The Tale</button>
+        <button id="analysisBtn" class="nav-btn">Course Notes</button>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero" class="panel">
+        <div class="hero-left">
+          <h2>Myths are made to be retold.</h2>
+          <p class="lede">
+            Choose the paths for Kweku Ananse and watch the myth reshape itself
+            — but the spider’s cleverness remains.
+          </p>
+          <div class="controls">
+            <button id="beginBtn" class="primary">Begin</button>
+            <button id="narrateToggle" class="secondary">
+              Toggle Narration
+            </button>
+            <div
+              id="narrationControls"
+              class="narration-controls"
+              aria-hidden="true"
+            >
+              <label for="voiceSelect">Voice</label>
+              <select
+                id="voiceSelect"
+                aria-label="Select narration voice"
+              ></select>
+              <label for="rateRange">Rate</label>
+              <input
+                id="rateRange"
+                type="range"
+                min="0.6"
+                max="1.3"
+                step="0.05"
+                value="0.95"
+              />
+              <span id="rateLabel">0.95</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div id="spiderWrap" class="spider-wrap" aria-hidden="true">
+            <!-- Inline SVG fallback will be shown here for small animation -->
+            <img
+              src="assets/spider.svg"
+              alt="decorative spider"
+              class="hero-spider"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="story" class="panel hidden" aria-live="polite">
+        <article id="scene">
+          <!-- Scene content injected by JS -->
+        </article>
+        <div id="choices" class="choices">
+          <!-- Choice buttons injected by JS -->
+        </div>
+        <div class="story-controls">
+          <button id="backBtn" class="secondary">Back</button>
+          <button id="restartBtn" class="secondary">Restart</button>
+        </div>
+      </section>
+
+      <section id="analysis" class="panel hidden">
+        <h3>Course Concepts & Motifs</h3>
+        <p>
+          <strong>Core motifs preserved:</strong> trickster intelligence, spider
+          imagery, storytelling as power, tests of community trust.
+        </p>
+        <p>
+          <strong>Adaptations here:</strong> the setting is contemporary urban
+          market life; Ananse's schemes use modern tech and gossip networks,
+          changing scale but not spirit.
+        </p>
+      </section>
+
+      <section id="credits" class="panel">
+        <h3>Credits & Submission</h3>
+        <ul>
+          <li>Retelling: Fiifi Botchway</li>
+          <li>Interactive framework: vanilla JS</li>
+          <li>Assets: simple SVG by the project</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <small>Created for Cornell course CLASS 2604.</small>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
