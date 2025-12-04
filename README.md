@@ -1,13 +1,13 @@
-# Kweku Ananse — Interactive Retelling
+# Kweku Ananse: Interactive Retelling
 
 This project is an interactive retelling of Kweku Ananse designed for my CLASS 2604 Greek Mythology final project.
 
 Files:
 
-- `index.html` — main entry (open in your browser)
-- `styles.css` — visual styling
-- `main.js` — simple scene engine plus optional speech narration
-- `assets/spider.svg` — decorative spider logo
+- `index.html`: main entry (open in your browser)
+- `styles.css`: visual styling
+- `main.js`: simple scene engine plus optional speech narration
+- `assets/spider.svg`: decorative spider logo
 
 How to run:
 
